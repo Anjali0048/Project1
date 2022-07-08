@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjali Fitness</title>
+
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* css reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        color: white;
+    }
+    .left{
+        border: 2px solid rgb(224, 33, 33);
+        position: absolute;
+        left: 22px;
+        top: 25px;
+        display: inline-block;
+        text-align: center;
+    }
+    .mid{
+        border: 2px solid rgb(50, 185, 50);
+        display: block;
+        width: 40%;
+        margin: 25px auto;
+
+    }
+    .right{
+        border: 2px solid rgb(55, 143, 224);
+        display: inline-block;
+        position: absolute;
+        right: 33px;
+        top: 25px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+        
+    }
+    .navbar li a{
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 10px 25px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        width: 100px;
+    }
+    .left div{
+
+    }
+    .btn{
+        color: whitesmoke;
+        padding: 5px 30px;
+        cursor: pointer;
+        background-color: black;
+    }
+    .btn :hover{
+        background-color: rgb(125, 134, 138);
+    }
+    .container{
+        border:4px solid violet;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 23%;
+        border-radius: 33px;
+    }
+    .container h3{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 295px;
+        border: 3px solid #cc0000;
+        padding: 13px;
+        margin: 7px auto;
+        border-radius: 20px;
+        font-size: 15px;
+
+    }
+
+    .container button{
+        width: 100px;
+        border: 3px solid red;
+        border-radius: 20px;
+        padding: 12px;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .container button :hover{
+        color: rgb(131, 50, 50);
+    }
+
+</style>
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="img/dumbell.jpg" alt="">
+            <div>Anjali's Fitness</div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <Button class="btn">Call Us</Button>
+            <Button class="btn">Email Us</Button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best Gym of Delhi</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your ph. no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your gender">
+            </div>
+
+            <button class="button">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
